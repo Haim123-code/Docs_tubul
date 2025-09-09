@@ -50,7 +50,7 @@ export default function App() {
   }, [token])
 
   return (
-    <div style={{maxWidth: 1000, margin: '40px auto', fontFamily: 'sans-serif'}}>
+    <div className="container">
       <h1>דוקס שיתופי – MVP</h1>
 
       {!token && (
