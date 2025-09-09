@@ -22,3 +22,14 @@ npm install
 npm run dev
 ```
 Configure `VITE_API_URL` in `.env` if needed.
+
+## Run Everything from One Script
+
+After installing backend requirements (`pip install -r backend/requirements.txt`) and frontend dependencies (`npm --prefix frontend install`), install `pywebview` and run:
+
+```bash
+pip install pywebview
+python run_docs.py
+```
+
+This script starts the FastAPI backend and the Vite dev server, then opens a desktop window displaying the collaborative editor.
