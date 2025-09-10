@@ -22,3 +22,14 @@ npm install
 npm run dev
 ```
 Configure `VITE_API_URL` in `.env` if needed.
+
+## Run Everything from One Script
+
+After installing backend requirements (`pip install -r backend/requirements.txt`) and frontend dependencies (`npm --prefix frontend install`), install `pywebview` and run:
+
+```bash
+pip install pywebview
+python run_docs.py
+```
+
+The launcher uses your current Python interpreter for `uvicorn` and the proper `npm` binary on Windows, then opens a desktop window to the Vite dev server.
